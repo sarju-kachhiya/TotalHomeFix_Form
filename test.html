@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smarter, Safer Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Fallback font */
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/cta-bg.jpg') no-repeat center center;
+    background-size: cover;
+    /* Removed height: 100vh; for CTA section */
+    padding: 80px 0; /* Add top and bottom padding for spacing */
+    position: relative;
+    overflow: hidden; /* Ensure background image doesn't overflow */
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* Inherit background from parent */
+    filter: brightness(0.6); /* Adjust brightness of the background image */
+    z-index: -1; /* Place behind content */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem; /* Adjust as needed */
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section .btn-light {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 0.3rem;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-section .btn-light:hover {
+    background-color: #e0e0e0;
+    color: #000000;
+}
+
+.hero-section .arrow-icon {
+    margin-left: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) { /* Adjust padding for medium screens */
+    .hero-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0; /* Further reduce padding for small screens */
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section .btn-lg {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+    </style>
+    <meta property="og:image" content="assets/images/favicons/Datadyo_favicon.png">
+</head>
+<body>
+
+    <section class="hero-section text-white d-flex align-items-center justify-content-center text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Begin your journey to a smarter, safer home today</h1>
+            <a href="#" class="btn btn-light btn-lg">Get a Quote <span class="arrow-icon">&rarr;</span></a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
